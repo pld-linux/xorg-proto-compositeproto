@@ -1,5 +1,3 @@
-# $Rev: 3259 $, $Date: 2005-08-17 20:16:28 $
-#
 Summary:	Composite protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u Composite i pomocnicze
 Name:		xorg-proto-compositeproto
@@ -12,9 +10,9 @@ Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/proto/compositeproto-%{version}
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	xorg-util-util-macros
 BuildRequires:	pkg-config
-BuildRoot:	%{tmpdir}/compositeproto-%{version}-root-%(id -u -n)
+BuildRequires:	xorg-util-util-macros
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 
@@ -23,7 +21,6 @@ Composite protocol and ancillary headers.
 
 %description -l pl
 Nag³ówki protoko³u Composite i pomocnicze.
-
 
 %package devel
 Summary:	Composite protocol and ancillary headers
@@ -38,10 +35,8 @@ Composite protocol and ancillary headers.
 %description devel -l pl
 Nag³ówki protoko³u Composite i pomocnicze.
 
-
 %prep
 %setup -q -n compositeproto-%{version}
-
 
 %build
 %{__aclocal}
@@ -51,7 +46,6 @@ Nag³ówki protoko³u Composite i pomocnicze.
 
 %{__make}
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
@@ -59,10 +53,8 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	pkgconfigdir=%{_pkgconfigdir}
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files devel
 %defattr(644,root,root,755)
