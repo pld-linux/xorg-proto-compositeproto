@@ -24,7 +24,7 @@ Nag³ówki protoko³u Composite i pomocnicze.
 Summary:	Composite protocol and ancillary headers
 Summary(pl):	Nag³ówki protoko³u Composite i pomocnicze
 Group:		X11/Development/Libraries
-Requires:	xorg-proto-xproto-devel
+Requires:	xorg-proto-fixesproto-devel
 Obsoletes:	compositeext
 
 %description devel
