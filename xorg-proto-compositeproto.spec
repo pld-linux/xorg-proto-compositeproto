@@ -5,8 +5,8 @@ Version:	0.2.2
 Release:	0.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC4/proto/compositeproto-%{version}.tar.bz2
-# Source0-md5:	4e067fec41f3a5ddef35d681823b664d
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/proto/compositeproto-X11R7.0-%{version}.tar.bz2
+# Source0-md5:	4de13ee64fdfd409134dfee9b184e6a9
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -33,7 +33,7 @@ Composite protocol and ancillary headers.
 Nag³ówki protoko³u Composite i pomocnicze.
 
 %prep
-%setup -q -n compositeproto-%{version}
+%setup -q -n compositeproto-X11R7.0-%{version}
 
 %build
 %{__aclocal}
