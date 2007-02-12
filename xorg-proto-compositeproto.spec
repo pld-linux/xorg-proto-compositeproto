@@ -1,5 +1,5 @@
 Summary:	Composite protocol and ancillary headers
-Summary(pl):	Nag丑wki protoko硊 Composite i pomocnicze
+Summary(pl.UTF-8):   Nag艂贸wki protoko艂u Composite i pomocnicze
 Name:		xorg-proto-compositeproto
 Version:	0.3.1
 Release:	1
@@ -16,12 +16,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Composite protocol and ancillary headers.
 
-%description -l pl
-Nag丑wki protoko硊 Composite i pomocnicze.
+%description -l pl.UTF-8
+Nag艂贸wki protoko艂u Composite i pomocnicze.
 
 %package devel
 Summary:	Composite protocol and ancillary headers
-Summary(pl):	Nag丑wki protoko硊 Composite i pomocnicze
+Summary(pl.UTF-8):   Nag艂贸wki protoko艂u Composite i pomocnicze
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-fixesproto-devel
 Obsoletes:	compositeext
@@ -29,8 +29,8 @@ Obsoletes:	compositeext
 %description devel
 Composite protocol and ancillary headers.
 
-%description devel -l pl
-Nag丑wki protoko硊 Composite i pomocnicze.
+%description devel -l pl.UTF-8
+Nag艂贸wki protoko艂u Composite i pomocnicze.
 
 %prep
 %setup -q -n compositeproto-%{version}
