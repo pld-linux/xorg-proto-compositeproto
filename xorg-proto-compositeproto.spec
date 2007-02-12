@@ -1,5 +1,5 @@
 Summary:	Composite protocol and ancillary headers
-Summary(pl.UTF-8):   Nagłówki protokołu Composite i pomocnicze
+Summary(pl.UTF-8):	Nagłówki protokołu Composite i pomocnicze
 Name:		xorg-proto-compositeproto
 Version:	0.3.1
 Release:	1
@@ -21,7 +21,7 @@ Nagłówki protokołu Composite i pomocnicze.
 
 %package devel
 Summary:	Composite protocol and ancillary headers
-Summary(pl.UTF-8):   Nagłówki protokołu Composite i pomocnicze
+Summary(pl.UTF-8):	Nagłówki protokołu Composite i pomocnicze
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-fixesproto-devel
 Obsoletes:	compositeext
