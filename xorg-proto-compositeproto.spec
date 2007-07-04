@@ -1,12 +1,12 @@
 Summary:	Composite protocol and ancillary headers
 Summary(pl.UTF-8):	Nagłówki protokołu Composite i pomocnicze
 Name:		xorg-proto-compositeproto
-Version:	0.3.1
+Version:	0.4
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/compositeproto-%{version}.tar.bz2
-# Source0-md5:	54f1fbd567f57093df054f8440a60a5e
+# Source0-md5:	6281344d656d4e0c8e9db4918efe3d1d
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
