@@ -1,5 +1,5 @@
-Summary:	Composite protocol and ancillary headers
-Summary(pl.UTF-8):	Nagłówki protokołu Composite i pomocnicze
+Summary:	Composite extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia Composite
 Name:		xorg-proto-compositeproto
 Version:	0.4
 Release:	1
@@ -14,23 +14,23 @@ BuildRequires:	xorg-util-util-macros
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Composite protocol and ancillary headers.
+Composite extension headers.
 
 %description -l pl.UTF-8
-Nagłówki protokołu Composite i pomocnicze.
+Nagłówki rozszerzenia Composite.
 
 %package devel
-Summary:	Composite protocol and ancillary headers
-Summary(pl.UTF-8):	Nagłówki protokołu Composite i pomocnicze
+Summary:	Composite extension headers
+Summary(pl.UTF-8):	Nagłówki rozszerzenia Composite
 Group:		X11/Development/Libraries
 Requires:	xorg-proto-fixesproto-devel
 Obsoletes:	compositeext
 
 %description devel
-Composite protocol and ancillary headers.
+Composite extension headers.
 
 %description devel -l pl.UTF-8
-Nagłówki protokołu Composite i pomocnicze.
+Nagłówki rozszerzenia Composite.
 
 %prep
 %setup -q -n compositeproto-%{version}
@@ -55,6 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
+%doc AUTHORS COPYING ChangeLog README compositeproto.txt
 %{_includedir}/X11/extensions/*.h
 %{_pkgconfigdir}/compositeproto.pc
