@@ -1,14 +1,14 @@
 Summary:	Composite extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia Composite
 Name:		xorg-proto-compositeproto
-Version:	0.4.1
+Version:	0.4.2
 Release:	1
 License:	MIT
 Group:		X11/Development/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/proto/compositeproto-%{version}.tar.bz2
-# Source0-md5:	3692f3f8b2ea10dff3d2cede8dc65e79
+# Source0-md5:	98482f65ba1e74a08bf5b056a4031ef0
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	xorg-util-util-macros >= 1.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -47,8 +47,7 @@ Nagłówki rozszerzenia Composite.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	pkgconfigdir=%{_pkgconfigdir}
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
