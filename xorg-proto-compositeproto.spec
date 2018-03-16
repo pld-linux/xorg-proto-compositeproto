@@ -1,13 +1,14 @@
+# NOTE: now maintained in xorg-proto-xorgproto.spec
 Summary:	Composite extension headers
 Summary(pl.UTF-8):	Nagłówki rozszerzenia Composite
 Name:		xorg-proto-compositeproto
 Version:	0.4.2
-Release:	2
+Release:	2.1
 License:	MIT
 Group:		X11/Development/Libraries
-Source0:	http://xorg.freedesktop.org/releases/individual/proto/compositeproto-%{version}.tar.bz2
+Source0:	https://xorg.freedesktop.org/releases/individual/proto/compositeproto-%{version}.tar.bz2
 # Source0-md5:	98482f65ba1e74a08bf5b056a4031ef0
-URL:		http://xorg.freedesktop.org/
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	xorg-util-util-macros >= 1.3
